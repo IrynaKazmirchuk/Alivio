@@ -1,0 +1,364 @@
+/* ..............................................1518........... */
+@media screen and (max-width: 1518px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .welcome__container {
+    margin-bottom: 140px;
+  }
+  .welcome-image {
+    transform: translateX(50px);
+  }
+  .how-info__slogan,
+  .story-info__title,
+  .product-info__slogan {
+    font-size: 45px;
+  }
+
+  .how__container {
+    margin-bottom: 262px;
+  }
+  .story__container {
+    margin-bottom: 90px;
+    gap: 50px;
+  }
+  .story-img {
+    max-width: 90%;
+  }
+}
+/* ..............................................1386........... */
+@media screen and (max-width: 1386px) {
+  .welcome__container {
+    margin-bottom: 100px;
+  }
+  .welcome-info__title {
+    font-size: 60px;
+  }
+  .how-info__slogan,
+  .story-info__title,
+  .product-info__slogan {
+    font-size: 43px;
+  }
+  .how-info__desc {
+    max-width: 430px;
+  }
+  .how__container {
+    margin-bottom: 222px;
+  }
+  .story__container {
+    margin-bottom: 50px;
+  }
+}
+/* ..............................................1300........... */
+@media screen and (max-width: 1300px) {
+  .header {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+  }
+  .header-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header__ul {
+    gap: 45px;
+  }
+  main {
+    padding-top: 90px;
+  }
+  .welcome__container,
+  .how__container,
+  .story__container,
+  .product__container {
+    margin-bottom: 150px;
+  }
+  .how-info__desc {
+    max-width: 50%;
+  }
+  .story__container {
+    padding-top: 190px;
+    padding-bottom: 150px;
+  }
+}
+/* ..............................................1150........... */
+@media screen and (max-width: 1150px) {
+  .header__btn {
+    display: none;
+  }
+  .welcome__container {
+    flex-direction: column-reverse;
+  }
+  .welcome-info__title,
+  .welcome-info__desc {
+    max-width: 100%;
+  }
+  .welcome-image__img,
+  .welcome-image {
+    width: 100%;
+  }
+  .welcome-image {
+    height: 70vh;
+    transform: translateX(25px);
+    margin-bottom: 20px;
+  }
+  .welcome-image__img {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  .welcome-info__title {
+    position: absolute;
+    bottom: 25%;
+    left: 3%;
+    z-index: 55;
+  }
+  .welcome-info__media {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    column-gap: 90px;
+  }
+  .welcome-info__desc {
+    margin-bottom: 25px;
+  }
+  .welcome-info__btn {
+    max-height: 64px;
+    text-align: center;
+  }
+  .welcome__container,
+  .how__container,
+  .story__container,
+  .product__container {
+    margin-bottom: 100px;
+  }
+  .product-info__desc {
+    max-width: 80%;
+  }
+  .how-info {
+    flex-direction: column;
+    align-items: start;
+    gap: 35px;
+  }
+  .how-info__slogan,
+  .how-info__desc {
+    max-width: 100%;
+  }
+}
+/* ..............................................992........... */
+@media screen and (max-width: 992px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .welcome-image {
+    transform: translateX(0);
+  }
+  .how-info {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .how-info__slogan,
+  .how-info__desc {
+    max-width: 100%;
+  }
+  .how-info__slogan {
+    font-size: 40px;
+  }
+  .how-step {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .how-step__item {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+  .how-step__item_write {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 200px;
+  }
+  .how-step__media {
+    display: grid;
+    gap: 10px;
+  }
+  .story__container {
+    flex-direction: column;
+    padding-top: 120px;
+    align-items: start;
+  }
+  .story-info__title {
+    max-width: 100%;
+  }
+  .story-image,
+  .story-img {
+    min-width: 100%;
+  }
+  .product__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    margin-bottom: 120px;
+    gap: 55px;
+  }
+  .product-img,
+  .product-info {
+    width: 100%;
+  }
+  .product-info {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .product-image {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .footer__ul {
+    display: grid;
+    grid-template-columns: 1fr 45%;
+    column-gap: 200px;
+  }
+}
+/* ..............................................770........... */
+@media screen and (max-width: 770px) {
+  #burger {
+    display: inline-block;
+  }
+  .header__ul {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 58%;
+    height: 56%;
+    background: #01996d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: translateX(-120%);
+    transition: 0.3s all ease-in-out;
+  }
+  .header__ul._active {
+    transform: translateX(3.5%);
+  }
+  .header__a {
+    color: #fff;
+    font-size: 26px;
+  }
+  .welcome-info__media {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .how-step {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .how-step__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+  .how-step__title,
+  .how-step__desc {
+    max-width: 100%;
+  }
+  .how-step__desc {
+    margin-bottom: 30px;
+  }
+  .how-step__image,
+  img {
+    min-width: 100%;
+  }
+  .how-info {
+    margin-bottom: 35px;
+  }
+  .story-play {
+    display: none;
+  }
+}
+/* ..............................................540........... */
+@media screen and (max-width: 540px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .welcome__container,
+  .how__container,
+  .story__container,
+  .product__container {
+    margin-bottom: 70px;
+  }
+  .welcome-image, .welcome-image__img {
+    height: 60vh;
+  }
+  .welcome-info__title {
+    bottom: 30%;
+    margin-bottom: 0;
+  }
+  .welcome-info__title {
+    font-size: 44px;
+  }
+  .how-info__title {
+    max-width: 400px;
+  }
+  .product-info__slogan,
+  .story-info__title,
+  .how-info__slogan {
+    font-size: 30px;
+  }
+  .footer__ul {
+    column-gap: 50px;
+  }
+  .header__ul {
+    height: 54%;
+  }
+  .header__ul._active {
+    transform: translateX(4%);
+  }
+  .product-info__btn {
+    width: 100%;
+    text-align: center;
+  }
+  .welcome__container,
+  .how__container,
+  .story__container,
+  .product__container {
+    margin-bottom: 70px;
+  }
+}
+/* ..............................................380........... */
+@media screen and (max-width: 380px) {
+  .welcome-info__title {
+    bottom: 43%;
+  }
+  .header__ul {
+    width: 80%;
+    height: 60%;
+  }
+  .welcome-image {
+    height: 62vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  .welcome-info__title {
+    /* bottom: 38%; */
+  }
+  .header__ul {
+    width: 65%;
+    height: 70%;
+  }
+  .welcome-image {
+    height: 57vh;
+  }
+}

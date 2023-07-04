@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,7 +25,11 @@
             <img src="img logo/Logo.svg" alt="Alivio" />
           </a>
           <nav class="header__nav">
-            <ul class="header__ul">
+            <div id="burger" onclick="navToggle()">
+              <span class="material-icons icon-menu">menu</span>
+              <span class="material-icons icon-close">close</span>
+            </div>
+            <ul class="header__ul" id="headerMenu">
               <li class="header__li">
                 <a href="/" class="header__a">Why Alivio</a>
               </li>
@@ -46,21 +54,26 @@
         <section class="welcome">
           <div class="welcome__container container">
             <div class="welcome-info">
-              <h1 class="welcome-info__title">Be aware, Manage well.</h1>
-              <p class="welcome-info__desc">
-                Everyone experiences stress in different ways. Let Alivio guide
-                you, in a personalized journal experience, to overcome your
-                stress.
-              </p>
-              <a href="/" class="btn btn_primary welcome-info__btn"
-                >Find Your Way</a
-              >
+              <h1 class="welcome-info__title">
+                Be aware, <br />
+                Manage well.
+              </h1>
+              <div class="welcome-info__media">
+                <p class="welcome-info__desc">
+                  Everyone experiences stress in different ways. Let Alivio
+                  guide you, in a personalized journal experience, to overcome
+                  your stress.
+                </p>
+                <a href="/" class="btn btn_primary welcome-info__btn"
+                  >Find Your Way</a
+                >
+              </div>
             </div>
             <div class="welcome-image">
               <img
                 src="img welcome/welcome.jpg"
                 alt="welcome"
-                class="wellcome-image__img"
+                class="welcome-image__img"
               />
             </div>
           </div>
@@ -83,32 +96,38 @@
             </div>
             <div class="how-step">
               <div class="how-step__item">
-                <h3 class="how-step__title">Personalize</h3>
-                <p class="how-step__desc">
-                  Answer a quick survey about how you express yourself, what
-                  causes you stress, and what area would you like to work on.
-                  This way, we can fully personalize your journal!
-                </p>
+                <div class="how-step__media">
+                  <h3 class="how-step__title">Personalize</h3>
+                  <p class="how-step__desc">
+                    Answer a quick survey about how you express yourself, what
+                    causes you stress, and what area would you like to work on.
+                    This way, we can fully personalize your journal!
+                  </p>
+                </div>
                 <div class="how-step__image">
                   <img src="img how/01.png" alt="Personalize" />
                 </div>
               </div>
-              <div class="how-step__item">
-                <h3 class="how-step__title">Write & Understand</h3>
-                <p class="how-step__desc">
-                  Write, draw, reflect, understand. Alivio will guide you
-                  through the prompts and will help you manage your stress!
-                </p>
+              <div class="how-step__item how-step__item_write">
+                <div class="how-step__media">
+                  <h3 class="how-step__title">Write & Understand</h3>
+                  <p class="how-step__desc">
+                    Write, draw, reflect, understand. Alivio will guide you
+                    through the prompts and will help you manage your stress!
+                  </p>
+                </div>
                 <div class="how-step__image">
                   <img src="img how/02.png" alt="Write & Understand" />
                 </div>
               </div>
               <div class="how-step__item">
-                <h3 class="how-step__title">Alivio!</h3>
-                <p class="how-step__desc">
-                  Now you are aware, and have a way to manage and overcome your
-                  own stress. What are you waiting for? Alivio today!
-                </p>
+                <div class="how-step__media">
+                  <h3 class="how-step__title">Alivio!</h3>
+                  <p class="how-step__desc">
+                    Now you are aware, and have a way to manage and overcome
+                    your own stress. What are you waiting for? Alivio today!
+                  </p>
+                </div>
                 <div class="how-step__image">
                   <img src="img how/03.png" alt="Alivio!" />
                 </div>
@@ -116,13 +135,11 @@
             </div>
           </div>
         </section>
-
         <section class="story">
           <div class="story__container container">
             <div class="story-info">
               <h2 class="story-info__title">
-                Let's hear about <br />
-                Kayla's success story
+                Let's hear about Kayla's success story
               </h2>
               <p class="story-info__desc">
                 See how well Alivio works in a real customer’s life.
@@ -141,13 +158,14 @@
             </div>
           </div>
         </section>
-
         <section class="product">
           <div class="product__container container">
             <div class="product-image">
-              <div class="product-image__bg">
-                <img src="img product/product.png" alt="product" class="product-img" />
-              </div>
+              <img
+                src="img product/product 2.png"
+                alt="product"
+                class="product-img"
+              />
             </div>
             <div class="product-info">
               <h4 class="product-info__title">Our product</h4>
@@ -169,7 +187,7 @@
       <footer class="footer">
         <div class="footer-container container">
           <a href="/" class="footer-logo">
-            <img src="img logo/logo footer.svg" alt="Alivio">
+            <img src="img logo/logo footer.svg" alt="Alivio" />
           </a>
           <nav class="footer__nav">
             <ul class="footer__ul">
@@ -190,5 +208,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
