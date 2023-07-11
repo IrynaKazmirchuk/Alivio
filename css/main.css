@@ -40,7 +40,7 @@ body {
 /* .............................COMMON style.................. */
 body {
   font-family: var(--font-main);
- }
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -290,12 +290,30 @@ body {
 .story-image {
   position: relative;
 }
-.story-play {
+.story-video {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: var(--color-text-third);
 }
+.icon-play,
+.icon-pause {
+  font-size: 82px;
+}
+.icon-play {
+  display: inline-block;
+}
+.icon-pause {
+  display: none;
+}
+.story-video._active .icon-play {
+  display: none;
+}
+.story-video._active .icon-pause {
+  display: inline-block;
+}
+
 /* /...........................PRODUCT style................... */
 .product__container {
   display: grid;
@@ -339,7 +357,7 @@ body {
 }
 .footer-logo {
   display: inline-block;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .footer-logo:hover {
   transform: scale(1.3);

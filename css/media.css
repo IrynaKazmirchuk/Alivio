@@ -283,9 +283,6 @@
   .how-info {
     margin-bottom: 35px;
   }
-  .story-play {
-    display: none;
-  }
 }
 /* ..............................................540........... */
 @media screen and (max-width: 540px) {
@@ -299,7 +296,8 @@
   .product__container {
     margin-bottom: 70px;
   }
-  .welcome-image, .welcome-image__img {
+  .welcome-image,
+  .welcome-image__img {
     height: 60vh;
   }
   .welcome-info__title {
@@ -352,7 +350,7 @@
 }
 @media screen and (max-width: 360px) {
   .welcome-info__title {
-    /* bottom: 38%; */
+    bottom: 30%;
   }
   .header__ul {
     width: 65%;
